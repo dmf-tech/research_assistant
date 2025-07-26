@@ -1,0 +1,136 @@
+2025-07-26 19:40:12,870 INFO: Research Assistant startup [in /home/daniel/personal-projects/research_assistant/app/__init__.py:27]
+2025-07-26 19:46:00,008 INFO: Research Assistant startup [in /home/daniel/personal-projects/research_assistant/app/__init__.py:27]
+2025-07-26 19:46:06,053 INFO: Research Assistant startup [in /home/daniel/personal-projects/research_assistant/app/__init__.py:27]
+2025-07-26 19:47:27,918 ERROR: Search error: Object of type set is not JSON serializable
+Traceback (most recent call last):
+  File "/home/daniel/personal-projects/research_assistant/app/routes.py", line 51, in search
+    return jsonify(response_data), 200
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniel/personal-projects/research_assistant/venv/lib/python3.12/site-packages/flask/json/__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniel/personal-projects/research_assistant/venv/lib/python3.12/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniel/personal-projects/research_assistant/venv/lib/python3.12/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/home/daniel/personal-projects/research_assistant/venv/lib/python3.12/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type set is not JSON serializable
+ [in /home/daniel/personal-projects/research_assistant/app/routes.py:54]
+2025-07-26 19:47:38,914 ERROR: Search error: Object of type set is not JSON serializable
+Traceback (most recent call last):
+  File "/home/daniel/personal-projects/research_assistant/app/routes.py", line 51, in search
+    return jsonify(response_data), 200
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniel/personal-projects/research_assistant/venv/lib/python3.12/site-packages/flask/json/__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniel/personal-projects/research_assistant/venv/lib/python3.12/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniel/personal-projects/research_assistant/venv/lib/python3.12/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/home/daniel/personal-projects/research_assistant/venv/lib/python3.12/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type set is not JSON serializable
+ [in /home/daniel/personal-projects/research_assistant/app/routes.py:54]
+2025-07-26 19:48:46,804 ERROR: Search error: Object of type set is not JSON serializable
+Traceback (most recent call last):
+  File "/home/daniel/personal-projects/research_assistant/app/routes.py", line 51, in search
+    return jsonify(response_data), 200
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniel/personal-projects/research_assistant/venv/lib/python3.12/site-packages/flask/json/__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniel/personal-projects/research_assistant/venv/lib/python3.12/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniel/personal-projects/research_assistant/venv/lib/python3.12/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/home/daniel/personal-projects/research_assistant/venv/lib/python3.12/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type set is not JSON serializable
+ [in /home/daniel/personal-projects/research_assistant/app/routes.py:54]
+2025-07-26 19:52:05,763 INFO: Research Assistant startup [in /home/daniel/personal-projects/research_assistant/app/__init__.py:27]
+2025-07-26 19:52:11,020 INFO: Research Assistant startup [in /home/daniel/personal-projects/research_assistant/app/__init__.py:27]
+2025-07-26 19:54:20,016 INFO: Research Assistant startup [in /home/daniel/personal-projects/research_assistant/app/__init__.py:27]
+2025-07-26 19:56:46,632 INFO: Research Assistant startup [in /home/daniel/personal-projects/research_assistant/app/__init__.py:27]
+2025-07-26 19:56:49,064 INFO: Research Assistant startup [in /home/daniel/personal-projects/research_assistant/app/__init__.py:27]
+2025-07-26 20:01:01,012 INFO: Research Assistant startup [in /home/daniel/personal-projects/research_assistant/app/__init__.py:27]
+2025-07-26 20:01:46,562 INFO: Research Assistant startup [in /home/daniel/personal-projects/research_assistant/app/__init__.py:27]
+2025-07-26 20:01:47,338 INFO: Research Assistant startup [in /home/daniel/personal-projects/research_assistant/app/__init__.py:27]
+2025-07-26 20:02:02,253 ERROR: DuckDuckGo API search failed: _aget_url() https://duckduckgo.com DuckDuckGoSearchException: Ratelimit [in /home/daniel/personal-projects/research_assistant/app/core/scraper.py:90]
+2025-07-26 20:02:02,253 WARNING: Search method _search_with_ddg failed: _aget_url() https://duckduckgo.com DuckDuckGoSearchException: Ratelimit [in /home/daniel/personal-projects/research_assistant/app/core/scraper.py:62]
+2025-07-26 20:02:06,215 ERROR: Selenium search failed: 'WebDriver' object has no attribute 'find_elements_by_css_selector' [in /home/daniel/personal-projects/research_assistant/app/core/scraper.py:159]
+2025-07-26 20:02:06,216 WARNING: Search method _search_with_selenium failed: 'WebDriver' object has no attribute 'find_elements_by_css_selector' [in /home/daniel/personal-projects/research_assistant/app/core/scraper.py:62]
+2025-07-26 20:02:06,996 ERROR: DuckDuckGo API search failed: _aget_url() https://duckduckgo.com DuckDuckGoSearchException: Ratelimit [in /home/daniel/personal-projects/research_assistant/app/core/scraper.py:90]
+2025-07-26 20:02:06,996 WARNING: Search method _search_with_ddg failed: _aget_url() https://duckduckgo.com DuckDuckGoSearchException: Ratelimit [in /home/daniel/personal-projects/research_assistant/app/core/scraper.py:62]
+2025-07-26 20:02:10,367 ERROR: Selenium search failed: 'WebDriver' object has no attribute 'find_elements_by_css_selector' [in /home/daniel/personal-projects/research_assistant/app/core/scraper.py:159]
+2025-07-26 20:02:10,367 WARNING: Search method _search_with_selenium failed: 'WebDriver' object has no attribute 'find_elements_by_css_selector' [in /home/daniel/personal-projects/research_assistant/app/core/scraper.py:62]

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="search-container">
+    <h2>Research Assistant</h2>
+    <form id="searchForm" class="search-form">
+        <input type="text" id="searchQuery" placeholder="Enter your research topic..." required>
+        <button type="submit">Search</button>
+    </form>
+    
+    <div class="options-container">
+        <h3>Search Options</h3>
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" id="includeNews" checked>
+                Include News Articles
+            </label>
+            <label>
+                <input type="checkbox" id="includeAcademic" checked>
+                Include Academic Sources
+            </label>
+            <label>
+                <input type="checkbox" id="includeArchive" checked>
+                Include Archive.org
+            </label>
+        </div>
+    </div>
+
+    <div id="results" class="results-container"></div>
+
+    <div class="export-container">
+        <h3>Export Options</h3>
+        <select id="exportFormat">
+            <option value="docx">DOCX</option>
+            <option value="pdf">PDF</option>
+        </select>
+        <button id="exportButton" disabled>Export Results</button>
+    </div>
+</div>
+{% endblock %} 
